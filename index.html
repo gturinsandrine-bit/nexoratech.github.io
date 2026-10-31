@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nexora Tech: tecnologia, acessórios e boas escolhas.">
+  <title>Nexora Tech | Tecnologia que acompanha você</title>
+  <style>
+    :root{--navy:#101827;--cyan:#27b5d8;--ink:#172033;--muted:#64748b;--bg:#f4f6f8;--white:#fff}
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)}
+    a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+    header{background:var(--navy);color:white;position:sticky;top:0;z-index:5}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:1px}
+    .mark{width:38px;height:38px;border-radius:11px;background:var(--cyan);color:#071522;display:grid;place-items:center;font-size:22px}
+    .brand small{display:block;color:var(--cyan);font-size:10px;letter-spacing:3px;margin-top:3px}
+    nav{display:flex;gap:22px;font-size:14px;color:#d7e0eb}
+    .hero{background:linear-gradient(120deg,#101827 0%,#182c43 70%,#17485c 100%);color:white;padding:76px 0 82px}
+    .hero-inner{max-width:720px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(38px,6vw,62px);line-height:1.04;margin:16px 0}
+    .hero p{color:#d1dbe7;line-height:1.7;font-size:17px;max-width:570px}
+    .btn{display:inline-block;background:var(--cyan);color:#071522;padding:14px 20px;border-radius:9px;font-weight:800;margin-top:14px}
+    section{padding:54px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}
+    h2{margin:0 0 8px;font-size:28px}.sub{margin:0;color:var(--muted);line-height:1.5}
+    .categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .cat{background:white;border:1px solid #e4e9ef;padding:22px;border-radius:14px;font-weight:700}
+    .cat span{display:block;font-size:25px;margin-bottom:12px}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product{background:white;border:1px solid #e4e9ef;border-radius:15px;overflow:hidden}
+    .product-art{height:170px;background:linear-gradient(135deg,#e8f3f7,#dce5ed);display:grid;place-items:center;font-size:54px}
+    .product-info{padding:18px}.tag{font-size:11px;color:#087c99;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+    .product h3{margin:8px 0;font-size:18px}.product p{color:var(--muted);font-size:13px;line-height:1.5;min-height:38px}
+    .product .btn{margin-top:4px;padding:11px 14px;font-size:13px}
+    .notice{background:#e8f6fa;border:1px solid #c8eaf2;padding:16px;border-radius:12px;color:#285466;font-size:13px;line-height:1.6}
+    footer{background:var(--navy);color:#d1dbe7;padding:32px 0;font-size:13px;line-height:1.7}
+    footer strong{color:white}.search{width:100%;max-width:320px;padding:12px 14px;border:1px solid #d8e0e8;border-radius:9px;font-size:14px}
+    @media(max-width:760px){nav{display:none}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.hero{padding:58px 0}.section-head{align-items:start;flex-direction:column}}
+    @media(max-width:480px){.products{grid-template-columns:1fr}.product-art{height:145px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="mark">ϟ</span><span>NEXORA<small>TECH STORE</small></span></a>
+    <nav><a href="#categorias">Categorias</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a></nav>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Tecnologia • Acessórios • Novidades</div>
+      <h1>Tecnologia que acompanha você.</h1>
+      <p>Descubra produtos e acessórios selecionados para deixar seu dia a dia mais prático e conectado.</p>
+      <a class="btn" href="#produtos">Explorar produtos</a>
+    </div>
+  </div>
+  <section id="categorias">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Explore por categoria</h2><p class="sub">Encontre o que combina com sua rotina.</p></div></div>
+      <div class="categories">
+        <a class="cat" href="#produtos"><span>🎧</span>Áudio</a>
+        <a class="cat" href="#produtos"><span>⌚</span>Smartwatches</a>
+        <a class="cat" href="#produtos"><span>⌨️</span>Acessórios</a>
+        <a class="cat" href="#produtos"><span>🔋</span>Carregadores</a>
+      </div>
+    </div>
+  </section>
+  <section id="produtos" style="padding-top:10px">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2>Produtos em destaque</h2><p class="sub">Vitrine demonstrativa — adicione aqui seus links autorizados.</p></div>
+        <input id="search" class="search" type="search" placeholder="Buscar produto..." aria-label="Buscar produto">
+      </div>
+      <div class="products" id="product-list">
+        <article class="product" data-name="fone bluetooth">
+          <div class="product-art">🎧</div><div class="product-info"><div class="tag">Áudio</div><h3>Fone Bluetooth</h3><p>Confira modelos e características no anúncio do vendedor.</p><a class="btn product-link" href="#" target="_blank" rel="noopener">Ver no Mercado Livre</a></div>
+        </article>
+        <article class="product" data-name="smartwatch relógio inteligente">
+          <div class="product-art">⌚</div><div class="product-info"><div class="tag">Wearables</div><h3>Smartwatch</h3><p>Compare funções, compatibilidade e avaliações.</p><a class="btn product-link" href="#" target="_blank" rel="noopener">Ver no Mercado Livre</a></div>
+        </article>
+        <article class="product" data-name="mouse sem fio">
+          <div class="product-art">🖱️</div><div class="product-info"><div class="tag">Acessórios</div><h3>Mouse sem fio</h3><p>Uma opção prática para estudo e trabalho.</p><a class="btn product-link" href="#" target="_blank" rel="noopener">Ver no Mercado Livre</a></div>
+        </article>
+      </div>
+      <p class="notice" style="margin-top:22px">Atenção: esta é uma vitrine inicial. Os botões ainda não possuem links de compra. Antes de publicar produtos, confira disponibilidade, preço, informações e regras do programa de afiliados. Se houver comissão, informe isso claramente ao visitante.</p>
+    </div>
+  </section>
+  <section id="sobre" style="padding-top:0">
+    <div class="wrap">
+      <h2>Sobre a Nexora Tech</h2>
+      <p class="sub" style="max-width:720px">Somos uma vitrine de recomendações de tecnologia. Nosso objetivo é ajudar você a descobrir produtos e comparar opções. A compra, o pagamento, a entrega e o atendimento do pedido acontecem diretamente na plataforma do vendedor.</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>NEXORA TECH</strong><br>Tecnologia, praticidade e boas escolhas.<br><br>Alguns links poderão ser links de afiliado. Isso significa que a Nexora Tech poderá receber uma comissão por compras qualificadas, sem custo adicional para o comprador.<br><br>Preços, estoque, condições e entrega são definidos pelo vendedor e podem mudar. Mercado Livre é uma plataforma de terceiros; a Nexora Tech não é sua representante oficial.</div></footer>
+<script>
+  const search = document.getElementById('search');
+  search.addEventListener('input', () => {
+    const term = search.value.toLocaleLowerCase('pt-BR');
+    document.querySelectorAll('.product').forEach(card => {
+      card.hidden = !card.dataset.name.includes(term);
+    });
+  });
+  // Para cadastrar um produto, substitua o href="#" do respectivo botão
+  // pelo link de afiliado autorizado gerado na sua conta.
+</script>
+</body>
+</html>
